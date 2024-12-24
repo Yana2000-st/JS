@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "TT-lakes-medium";
+    src: url("./fonts/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: "TT-lakes-bold";
+    src: url("./fonts/TTLakes-Bold.woff") format("woff");
+    font-weight: 700;
+}
+  
+@font-face {
+    font-family: "TT-lakes-regular";
+    src: url("./fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+}
+  
+body {
+    background-color: #F8F8F8;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    border-top: 1px solid #D9FFF5;
+    margin-bottom: 16px;
+}
+
+.header__name {
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    margin: 16px;
+    font-family: "TT-lakes-regular";
+}
+
+.image-slide__wrapper {
+    position: relative;
+}
+
+.button-styling {
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    line-height: 72px;
+    position: relative;
+}
+
+.button-styling img {
+    vertical-align: middle;
+    padding: 20px 116px 20px 16px; 
+}
+
+.button-styling::after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  top: 16px;
+  right: 15px;
+}
+
+.button-styling::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  rotate: -45deg;
+  top: 33px;
+  right: 34px;
+  border-bottom: 2px solid #FF3E79;
+  border-right: 2px solid #FF3E79;
+  border-radius: 1px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  padding: 16px;
+}
+
+#toggleButton {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+  font-family: "TT-lakes-medium";
+  background-color: #F8F8F8;;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
