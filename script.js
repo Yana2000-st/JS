@@ -1,16 +1,48 @@
-// let toggleButton = document.getElementById('toggleButton');
-// let linksContainer = document.querySelector('.links');
+let swiperInstance; 
 
-// toggleButton.addEventListener('click', () => {
-//   let isOpen = linksContainer.classList.toggle('open');
-//   toggleButton.textContent = isOpen ? 'Скрыть' : 'Показать все';
-//  });
+function manageSwiper() {
+  const screenWidth = window.innerWidth; 
 
-  const swiper = new Swiper('.swiper', {
-    pagination: {
-      el: '.swiper-pagination', 
-      clickable: true,          
-    },
-    slidesPerView: 1,   
-    spaceBetween: 16,         
-  });
+  if (screenWidth <= 767) {
+    if (!swiperInstance) { 
+      swiperInstance = new Swiper('.swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 16,
+      });
+    }
+  } else {
+    if (swiperInstance) {
+      swiperInstance.destroy(true, true); 
+      swiperInstance = null;
+    }
+  }
+}
+
+manageSwiper();
+window.addEventListener('resize', manageSwiper);
+
+function readMore() {
+    let toggleButton = document.getElementById("toggleButton");
+    let acer = document.getElementById("acer");
+    let sony = document.getElementById("sony");
+
+    if (acer.style.display === "none") {
+      acer.style.display = "grid";
+      toggleButton.innerHTML = "Скрыть";
+    } else {
+      acer.style.display = "none";
+      toggleButton.innerHTML = "Показать все";
+    }
+
+    if (sony.style.display === "none") {
+      sony.style.display = "grid";
+      toggleButton.innerHTML = "Cкрыть";
+    } else {
+      sony.style.display = "none";
+      toggleButton.innerHTML = "Показать все";
+    }
+}

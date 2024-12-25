@@ -6,8 +6,8 @@
     <meta name="keywords" content="Ремонт,техника,Услуги">
     <meta name="disription" content="Услуги и сервисы">
     <title>JS</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -16,9 +16,8 @@
         <div class="swiper-container"> 
         <div class="image-slider swiper"> 
             <div class="image-slide__wrapper swiper-wrapper">
-            <!-- <div class="links">  -->
                  <div class="image-slider__slide swiper-slide">
-                <a class="link-bar" href="#">
+                    <a class="link-bar" href="#">
                     <div class="image-slider__image button-styling">
                     <img src="img/lenovo.png" alt="Lenovo">
                     </div>
@@ -55,19 +54,19 @@
                 <div class="image-slider__slide swiper-slide">
                 <a class="link-bar" href="#">
                     <div class="image-slider__image button-styling">
-                    <img  src="img/hp.png" alt="hp">
+                    <img src="img/hp.png" alt="hp">
                     </div> 
                 </a>      
                 </div>
                 <div class="image-slider__slide swiper-slide">
-                <a class="link-bar" href="#">
+                <a id ="acer" class="link-bar" href="#">
                     <div class="image-slider__image button-styling">
                     <img  src="img/acer.png" alt="acer">
                     </div>  
                 </a>     
                 </div>
                 <div class="image-slider__slide swiper-slide">
-                <a class="link-bar" href="#">
+                <a id ="sony" class="link-bar" href="#">
                     <div class="image-slider__image button-styling">
                     <img  src="img/sony.png" alt="sony">
                     </div> 
@@ -77,9 +76,11 @@
                 <div class="swiper-pagination"></div>
             </div>
             </div>
-        <!-- <button id="toggleButton">Показать все</button> -->
+            <div class ="open"> 
+         <button id="toggleButton" onclick = "readMore()">Показать все</button> 
         </div> 
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        </div>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script src="script.js"></script>
 </body>
 </html>
