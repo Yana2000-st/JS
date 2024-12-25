@@ -11,6 +11,6 @@
       el: '.swiper-pagination', 
       clickable: true,          
     },
-    slidesPerView: 1.5,   
-    spaceBetween: 120,         
+    slidesPerView: 1,   
+    spaceBetween: 16,         
   });
