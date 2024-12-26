@@ -10,7 +10,7 @@ function manageSwiper() {
           el: '.swiper-pagination',
           clickable: true,
         },
-        slidesPerView: 1,
+        slidesPerView: 1.3,
         spaceBetween: 16,
         loop:true,
       });
