@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container-wrapper">
     <header class="header">
        <p class="header__name">Ремонт техники различных брендов</p>
-    </header>
+     </header>
         <div class="swiper-container"> 
         <div class="image-slider swiper"> 
             <div class="image-slide__wrapper swiper-wrapper">
@@ -58,28 +59,48 @@
                     </div> 
                 </a>      
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                <a id ="acer" class="link-bar" href="#">
-                    <div class="image-slider__image button-styling">
-                    <img  src="img/acer.png" alt="acer">
-                    </div>  
-                </a>     
-                </div>
-                <div class="image-slider__slide swiper-slide">
-                <a id ="sony" class="link-bar" href="#">
-                    <div class="image-slider__image button-styling">
-                    <img  src="img/sony.png" alt="sony">
-                    </div> 
-                </a>      
-                </div>
+                <div class="image-slider__slide swiper-slide hidden">
+                    <a class="link-bar" href="#">
+                        <div class="image-slider__image button-styling">
+                        <img  src="img/acer.png" alt="acer">
+                        </div>  
+                    </a>     
+                    </div>
+                    <div class="image-slider__slide swiper-slide hidden">
+                    <a class="link-bar" href="#">
+                        <div class="image-slider__image button-styling">
+                        <img  src="img/sony.png" alt="sony">
+                        </div> 
+                    </a>      
+                    </div>
+                    <div class="image-slider__slide swiper-slide large-screen-hidden hidden">
+                        <a class="link-bar" href="#">
+                            <div class="image-slider__image button-styling">
+                            <img  src="img/sony.png" alt="sony">
+                            </div> 
+                        </a>      
+                    </div>
+                        <div class="image-slider__slide swiper-slide large-screen-hidden hidden">
+                            <a class="link-bar" href="#">
+                                <div class="image-slider__image button-styling">
+                                <img  src="img/sony.png" alt="sony">
+                                </div> 
+                            </a>      
+                        </div>
+                        <div class="image-slider__slide swiper-slide large-screen-hidden hidden">
+                            <a class="link-bar" href="#">
+                                <div class="image-slider__image button-styling">
+                                <img  src="img/acer.png" alt="acer">
+                                </div>  
+                            </a>     
+                        </div>
                 </div> 
                 <div class="swiper-pagination"></div>
             </div>
             </div>
-            <div class ="open"> 
-         <button id="toggleButton" onclick = "readMore()">Показать все</button> 
-        </div> 
+              <button id="toggleButton" onclick = "readMore()">Показать все</button> 
         </div>
+     </div>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script src="script.js"></script>
 </body>

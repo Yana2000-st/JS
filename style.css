@@ -37,6 +37,11 @@ body {
     font-family: "TT-lakes-regular";
 }
 
+.container-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .header {
     border-top: 1px solid #D9FFF5;
     margin-bottom: 16px;
@@ -139,15 +144,6 @@ body {
     height: 12px; 
 }
 
-#acer {
-    display: none;
-}
-
-#sony {
-    display: none;
-}
-
-
 @media (min-width: 768px) {
 
 .header{
@@ -203,7 +199,7 @@ body {
     content: '';
     width: 5px;
     height: 5px;
-    rotate: 45deg;
+    rotate: var(--rotate);
     top: 4px;
     left: -17px;
     border-right: 2px solid #41F6D7;
@@ -216,12 +212,20 @@ body {
     content: '';
     width: 5px;
     height: 5px;
-    rotate: 45deg;
+    rotate: var(--rotate);
     top: 10px;
     left: -17px;
     border-right: 2px solid #41F6D7;
     border-bottom: 2px solid #41F6D7;
     border-radius: 1px;
+}
+
+.large-screen-hidden {
+   display: none;
+}
+
+.hidden {
+    display: none;
 }
 }
 
@@ -236,12 +240,20 @@ body {
     max-width: calc(100% - 64px);
 }
 
-#acer {
+.header__name {
+    padding-left: 32px;
+}
+
+.hidden {
     display: grid;
 }
 
-#sony {
-    display: grid;
+.large-screen-hidden {
+    display: none;
 }
 
+.image-slide__wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+}
 }
